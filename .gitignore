@@ -1,0 +1,29 @@
+# opencode local config (regenerate via `codegraph install --target opencode --location local`)
+opencode.json
+opencode.jsonc
+.opencode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# CodeGraph local index (per-machine, rebuilds via `codegraph init`)
+.codegraph/
+
+# Playwright
+test-results/
+playwright-report/
+
+# Node
+node_modules/
+dist/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Editors
+.vscode/
+.idea/
+*.swp
