@@ -10,8 +10,11 @@ script = ExtResource("1")
 [node name="Player" type="CharacterBody3D" parent="."]
 script = ExtResource("2")
 
-[node name="Camera3D" type="Camera3D" parent="./Player"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 4)
+[node name="SpringArm3D" type="SpringArm3D" parent="./Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6, 0)
+spring_length = 4.0
+
+[node name="Camera3D" type="Camera3D" parent="./Player/SpringArm3D"]
 current = true
 
 [node name="Guard1" type="CharacterBody3D" parent="."]
